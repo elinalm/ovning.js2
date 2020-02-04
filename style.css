@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  /* background-color: cornflowerblue; */
   padding: 0;
 }
 
@@ -22,11 +21,6 @@ header {
   background-color: #ffd1aa;
   display: flex;
   justify-content: space-between;
-}
-
-.menu {
-  grid-area: menu;
-  background-color: yellow;
 }
 
 main {
