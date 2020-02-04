@@ -22,15 +22,6 @@ header {
   justify-content: space-between;
 }
 
-main {
-  grid-area: main;
-  background-image: url(./assets/main_photo.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
 .logo {
   width: 6rem;
   height: 6rem;
@@ -59,3 +50,52 @@ input {
 .icons {
   margin-right: 2rem;
 }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Teko', sans-serif;
+  background-color: #B27442;
+  font-size: 1.2rem;
+  box-shadow: 0 -0.5rem 0.4rem 1rem #B27442;
+}
+
+.telMail p {
+  margin-top: 1rem;
+  margin-left:5rem;
+}
+.adress{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress div{
+  padding-top: 1rem;
+}
+
+#icons {
+  margin-right: 5rem;
+}
+
+footer i{
+  margin: 1rem 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.menu {
+  display:flex;
+  justify-content: space-evenly;
+  grid-area: menu;
+  text-align: center;
+}
+
+.menu p{
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+}
+
