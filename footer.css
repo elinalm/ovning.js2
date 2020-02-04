@@ -1,0 +1,28 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Teko', sans-serif;
+  }
+
+.telMail p {
+    margin-top: 1rem;
+    margin-left:5rem;
+}
+.adress{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.adress div{
+    padding: 1rem 0;
+}
+
+i{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}

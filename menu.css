@@ -1,0 +1,12 @@
+.menu {
+    display:flex;
+    justify-content: space-evenly;
+    grid-area: menu;
+    text-align: center;
+  }
+
+.menu p{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+}
+

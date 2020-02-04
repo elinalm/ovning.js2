@@ -36,8 +36,3 @@ main {
   grid-area: secondMain;
   background-color: pink;
 }
-
-footer {
-  grid-area: footer;
-  background-color: purple;
-}
