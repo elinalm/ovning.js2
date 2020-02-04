@@ -1,0 +1,34 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Teko', sans-serif;
+    background-color: #804515;
+    font-size: 1.2rem;
+  }
+
+.telMail p {
+    margin-top: 1rem;
+    margin-left:5rem;
+}
+.adress{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.adress div{
+    padding-top: 1rem;
+}
+
+#icons {
+    margin-right: 5rem;
+}
+
+footer i{
+    margin: 1rem 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}

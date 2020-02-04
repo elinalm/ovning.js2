@@ -6,7 +6,7 @@
 .grid {
   height: 100vh;
   display: grid;
-  grid-template-rows: 15% 5% 35% 35% 10%;
+  grid-template-rows: 15% 5% 32% 30% 18%;
   grid-template-columns: repeat (3, 1fr);
   grid-template-areas:
     "header header header"
@@ -31,11 +31,6 @@ main {
 .secondMain {
   grid-area: secondMain;
   background-color: pink;
-}
-
-footer {
-  grid-area: footer;
-  background-color: purple;
 }
 
 .logo {
