@@ -3,9 +3,10 @@ footer {
     display: flex;
     justify-content: space-between;
     font-family: 'Teko', sans-serif;
-    background-color: #804515;
+    background-color: #B27442;
     font-size: 1.2rem;
-  }
+    box-shadow: 0 -0.5rem 0.4rem 1rem #B27442;
+}
 
 .telMail p {
     margin-top: 1rem;

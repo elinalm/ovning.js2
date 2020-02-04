@@ -6,31 +6,29 @@
 .grid {
   height: 100vh;
   display: grid;
-  grid-template-rows: 15% 5% 32% 30% 18%;
+  grid-template-rows: 15% 5% 85% 18%;
   grid-template-columns: repeat (3, 1fr);
   grid-template-areas:
     "header header header"
     "menu menu menu"
     "main main main"
-    "secondMain secondMain secondMain"
     "footer footer footer";
 }
 
 header {
   grid-area: header;
-  background-color: #ffd1aa;
+  background-color: #D49A6A;
   display: flex;
   justify-content: space-between;
 }
 
 main {
   grid-area: main;
-  background-color: pink;
-}
+  background-image: url(./assets/main_photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.secondMain {
-  grid-area: secondMain;
-  background-color: pink;
 }
 
 .logo {
@@ -47,10 +45,11 @@ i {
 }
 
 input {
-  height: 40%;
+  height: 30%;
   width: 15rem;
   border-radius: 1rem;
-  border: 1px solid #d49a6a;
+  border: 1px solid #804515;
+  padding: 0.4rem;
 }
 
 .searchBar {
