@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  background-color: cornflowerblue;
   padding: 0;
 }
 
@@ -20,11 +19,6 @@
 header {
   grid-area: header;
   background-color: lightcoral;
-}
-
-.menu {
-  grid-area: menu;
-  background-color: yellow;
 }
 
 main {
