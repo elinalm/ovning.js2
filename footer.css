@@ -3,6 +3,8 @@ footer {
     display: flex;
     justify-content: space-between;
     font-family: 'Teko', sans-serif;
+    background-color: #804515;
+    font-size: 1.2rem;
   }
 
 .telMail p {
@@ -16,13 +18,17 @@ footer {
 }
 
 .adress div{
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
-i{
+#icons {
+    margin-right: 5rem;
+}
+
+footer i{
+    margin: 1rem 0.5rem;
     font-size: 2rem;
     display: flex;
     flex-direction: row;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    color: white;
 }
