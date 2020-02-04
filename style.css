@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  background-color: cornflowerblue;
+  padding: 0;
+}
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 5% 35% 35% 10%;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "main main main"
+    "secondMain secondMain secondMain"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: lightcoral;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: yellow;
+}
+
+main {
+  grid-area: main;
+  background-color: pink;
+}
+
+.secondMain {
+  grid-area: secondMain;
+  background-color: pink;
+}
+
+footer {
+  grid-area: footer;
+  background-color: purple;
+}
