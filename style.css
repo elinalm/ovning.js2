@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  background-color: cornflowerblue;
   padding: 0;
 }
 
@@ -19,12 +18,9 @@
 
 header {
   grid-area: header;
-  background-color: lightcoral;
-}
-
-.menu {
-  grid-area: menu;
-  background-color: yellow;
+  background-color: #ffd1aa;
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -35,4 +31,32 @@ main {
 .secondMain {
   grid-area: secondMain;
   background-color: pink;
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.5rem;
+}
+
+i {
+  font-size: 1.3rem;
+  margin: 1rem;
+  display: flex;
+  color: #804515;
+}
+
+input {
+  height: 40%;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid #d49a6a;
+}
+
+.searchBar {
+  margin: 1rem;
+}
+
+.icons {
+  margin-right: 2rem;
 }
