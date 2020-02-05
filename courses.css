@@ -1,0 +1,59 @@
+main {
+  grid-area: main;
+  display: grid;
+  background-color: #d49a6a;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "courses courses courses"
+    "courses courses courses"
+    " . form . ";
+    flex-grow: 1;
+}
+
+.coursesBorder {
+  border: 2px dotted black;
+}
+
+img {
+  height: 10%;
+  width: 20%;
+}
+
+.courses {
+  grid-area: courses;
+  display: flex;
+  background-image: url(./assets/barista_course.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses p {
+  color: white;
+  font-size: 4rem;
+}
+
+form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 1.5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid #804515;
+  padding: 0.4rem;  
+  margin: 0.1rem;
+}
+
+input[type="submit"] {
+  width: 3rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/4a99720832.js" crossorigin="anonymous"></script>
+  <title>Coffe makes the world go round</title>
+  <script src="script.js"></script>
+  <link href="courses.css" rel="stylesheet" />
+  <link href="general.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="grid">
+    <header>
+      <a href="index.html">
+        <img class="logo" src="./assets/logo.png" alt="Logo" /></a>
+      <div class="searchBar">
+        <input type="text" placeholder="Search..." />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="icons">
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </header>
+    <div class="menu">
+      <a href="cups.html">
+        <p class="cupsBorder">Cups</p></a>
+        <a href="interior.html">
+        <p class="interiorBorder">Interior</p></a>
+        <a href="equipment.html">
+        <p class="equipmentBorder">Equipment</p></a>
+        <a href="courses.html">
+        <p class="coursesBorder">Courses</p></a>
+    </div>
+    <main>
+      <div class="courses"> <p>Want to join one of our courses?</p></div>
+      <form>
+        <h2>Choose type of course:</h2>
+        <div class="radiobuttons">
+        <input type="radio" id="short" name="course" value="short" checked> <label for="short">Short barista course (5 weeks)</label><br> 
+        <input type="radio" id="long" name="course" value="long"> <label for="long">Long barista course (10 weeks)</label><br>
+        <input type="radio" id="home" name="home" value="home"> <label for="home">Make great coffee at home (1 class)</label><br>
+        </div>
+        <input type="text" name="firstname" placeholder="First name">
+        <input type="text" name="lastname" placeholder="Last name">
+        <input type="submit">
+      </form>
+    </main>
+    <footer>
+      <div class="telMail">
+        <p>Tel: 0733-47-63-85</p>
+        <p>Mail: coffe@gmail.com</p>
+      </div>
+      <div class="adress">
+        <p>Kaffevägen 8, Göteborg</p>
+        <div>
+          <p>Kaffevägen 8 ligger på Mariaplan i Majorna,</p>
+          <p>hit kommer du enklast med spårvagn 3 och 11</p>
+        </div>
+      </div>
+      <div id="icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

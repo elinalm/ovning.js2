@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Teko', sans-serif;
 }
 
 .grid {
@@ -35,16 +36,16 @@ i {
   color: #804515;
 }
 
-input {
+.searchBar {
+  margin: 1rem;
+}
+
+.searchBar input {
   height: 30%;
   width: 15rem;
   border-radius: 1rem;
   border: 1px solid #804515;
   padding: 0.4rem;
-}
-
-.searchBar {
-  margin: 1rem;
 }
 
 .icons {
@@ -55,7 +56,6 @@ footer {
   grid-area: footer;
   display: flex;
   justify-content: space-between;
-  font-family: 'Teko', sans-serif;
   background-color: #B27442;
   font-size: 1.2rem;
   box-shadow: 0 -0.5rem 0.4rem 1rem #B27442;
@@ -95,12 +95,12 @@ footer i{
 }
 
 .menu p{
-  font-family: 'Teko', sans-serif;
   font-size: 1.5rem;
 }
 
-a:link {
+a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {

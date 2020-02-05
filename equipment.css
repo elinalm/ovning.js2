@@ -1,0 +1,59 @@
+main {
+  grid-area: main;
+  display: grid;
+  background-color: #D49A6A;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 1fr 1fr 1fr;
+ grid-template-areas: 
+ "equipment1 equipment2 equipment3"
+ "price1 price2 price3";
+}
+
+.equipmentBorder {
+  border: 2px dotted black;
+}
+
+img {
+  height: 10%;
+  width: 20%;
+}
+
+.equipment1 {
+  grid-area: equipment1;
+  background-image: url(./assets/equpment1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.equipment2 {
+  grid-area: equipment2;
+  background-image: url(./assets/equipment2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+
+}
+.equipment3 {
+  grid-area: equipment3;
+  background-image: url(./assets/equipment3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.price1 {
+  grid-area: price1;
+  text-align: center;
+}
+
+.price2 {
+  grid-area: price2;
+  text-align: center;
+}
+
+.price3 {
+  grid-area: price3;
+  text-align: center;
+}
