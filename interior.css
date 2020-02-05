@@ -5,11 +5,11 @@ main {
   grid-template-rows: 70% 30%;
   grid-template-columns: 1fr 1fr 1fr;
  grid-template-areas: 
- "coffeecup1 coffeecup2 coffeecup3"
+ "interior1 interior2 interior3"
  "price1 price2 price3";
 }
 
-.cupsBorder {
+.interiorBorder {
   border: 2px dotted black;
 }
 
@@ -19,16 +19,16 @@ img {
 }
 
 .coffeecup1 {
-  grid-area: coffeecup1;
-  background-image: url(./assets/coffeecup1.jpg);
+  grid-area: interior1;
+  background-image: url(./assets/interior1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
 }
 
 .coffeecup2 {
-  grid-area: coffeecup2;
-  background-image: url(./assets/cofeecup2.jpg);
+  grid-area: interior2;
+  background-image: url(./assets/interior2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -36,8 +36,8 @@ img {
 
 }
 .coffeecup3 {
-  grid-area: coffeecup3;
-  background-image: url(./assets/cofeecup3.jpg);
+  grid-area: interior3;
+  background-image: url(./assets/interior3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
