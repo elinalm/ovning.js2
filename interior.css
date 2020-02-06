@@ -55,14 +55,3 @@ img {
   grid-area: price3;
   text-align: center;
 }
-
-.nrOfCartItems {
-  position: absolute;
-  top: 0.2rem;
-  color: black;
-  background-color: white;
-  font-size: 12px;
-  padding: 0.2rem;
-  border: 1px solid black;
-  border-radius: 50%;
-}
