@@ -9,6 +9,10 @@ main {
  "price1 price2 price3";
 }
 
+.red{
+  color: red;
+}
+
 .cupsBorder {
   border: 2px dotted black;
 }
