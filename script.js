@@ -5,7 +5,10 @@ let heart3 = document.querySelector("#heart3");
 let count = 0;
 let div;
 let nrOfCartitems;
-let btn = document.getElementById("addToCart");
+let btn = document.querySelector(".addToCart");
+let btn2 = document.querySelector(".addToCart2");
+let btn3 = document.querySelector(".addToCart3");
+document.getElementsByName;
 let imageurl = [
     "./assets/coffeecup1.jpg",
     "./assets/cofeecup2.jpg",
@@ -33,8 +36,10 @@ function closeModal() {
     let modal = document.querySelector(".modal");
     modal.style.visibility = "hidden";
 }
-if (btn !== null) {
+if (btn || btn2 || btn3 !== null) {
     btn.addEventListener("click", addToCart);
+    btn2.addEventListener("click", addToCart);
+    btn3.addEventListener("click", addToCart);
 }
 function addToCart() {
     var _a;
