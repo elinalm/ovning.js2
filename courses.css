@@ -2,13 +2,11 @@ main {
   grid-area: main;
   display: grid;
   background-color: #d49a6a;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60% 40% ;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "courses courses courses"
-    "courses courses courses"
     " . form . ";
-    flex-grow: 1;
 }
 
 .coursesBorder {
@@ -40,20 +38,25 @@ form {
   grid-area: form;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+label {
+  margin: 0.5rem;
 }
 
 input[type="text"] {
-  text-align: center;
   height: 1.5rem;
   width: 15rem;
   border-radius: 1rem;
   border: 1px solid #804515;
   padding: 0.4rem;  
-  margin: 0.1rem;
+  margin: 0.3rem;
 }
 
 input[type="submit"] {
   width: 3rem;
   border-radius: 1rem;
+  margin: 1rem;
 }
