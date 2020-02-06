@@ -4,18 +4,6 @@
   font-family: 'Teko', sans-serif;
 }
 
-.grid {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 15% 5% 120% 18%;
-  grid-template-columns: repeat (3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "menu menu menu"
-    "main main main"
-    "footer footer footer";
-}
-
 header {
   grid-area: header;
   background-color: #D49A6A;
@@ -50,6 +38,17 @@ i {
 
 .icons {
   margin-right: 2rem;
+}
+
+.nrOfCartItems {
+  position: absolute;
+  top: 0.2rem;
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 footer {

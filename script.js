@@ -1,7 +1,7 @@
 "use strict";
-let price1 = document.querySelector(".price1");
-let price2 = document.querySelector(".price2");
-let price3 = document.querySelector(".price3");
+let heart1 = document.querySelector("#heart1");
+let heart2 = document.querySelector("#heart2");
+let heart3 = document.querySelector("#heart3");
 let count = 0;
 let div;
 let nrOfCartitems;
@@ -11,15 +11,15 @@ let imageurl = [
     "./assets/cofeecup2.jpg",
     "./assets/cofeecup3.jpg"
 ];
-price1.addEventListener("click", (ev) => {
+heart1.addEventListener("click", (ev) => {
     let cup = document.querySelector("#heart1");
     cup.classList.toggle("red");
 });
-price2.addEventListener("click", (ev) => {
+heart2.addEventListener("click", (ev) => {
     let cup2 = document.querySelector("#heart2");
     cup2.classList.toggle("red");
 });
-price3.addEventListener("click", (ev) => {
+heart3.addEventListener("click", (ev) => {
     let cup2 = document.querySelector("#heart3");
     cup2.classList.toggle("red");
 });
