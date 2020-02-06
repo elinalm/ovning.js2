@@ -1,23 +1,38 @@
 "use strict";
-let price1 = document.querySelector(".price1");
-let price2 = document.querySelector(".price2");
-let price3 = document.querySelector(".price3");
+let heart1 = document.querySelector("#heart1");
+let heart2 = document.querySelector("#heart2");
+let heart3 = document.querySelector("#heart3");
 let count = 0;
 let div;
 let nrOfCartitems;
 let btn = document.getElementById("addToCart");
-price1.addEventListener("click", (ev) => {
+let imageurl = [
+    "./assets/coffeecup1.jpg",
+    "./assets/cofeecup2.jpg",
+    "./assets/cofeecup3.jpg"
+];
+heart1.addEventListener("click", (ev) => {
     let cup = document.querySelector("#heart1");
     cup.classList.toggle("red");
 });
-price2.addEventListener("click", (ev) => {
+heart2.addEventListener("click", (ev) => {
     let cup2 = document.querySelector("#heart2");
     cup2.classList.toggle("red");
 });
-price3.addEventListener("click", (ev) => {
+heart3.addEventListener("click", (ev) => {
     let cup2 = document.querySelector("#heart3");
     cup2.classList.toggle("red");
 });
+function openModal(imgUrl) {
+    let modal = document.querySelector(".modal");
+    let modalimg = document.querySelector(".modalImg");
+    modalimg.src = imgUrl;
+    modal.style.visibility = "visible";
+}
+function closeModal() {
+    let modal = document.querySelector(".modal");
+    modal.style.visibility = "hidden";
+}
 if (btn !== null) {
     btn.addEventListener("click", addToCart);
 }
