@@ -66,3 +66,22 @@ img {
   border: 1px solid black;
   border-radius: 50%;
 }
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImg {
+  height: 80vh;
+  width: 80vw;
+  width: auto;
+  object-fit: cover;
+}

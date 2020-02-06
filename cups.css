@@ -17,9 +17,24 @@ main {
   border: 2px dotted black;
 }
 
-img {
-  height: 10%;
-  width: 20%;
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImg {
+  max-height: 80vh;
+  max-width: 80vw;
+  width: auto;
+  object-fit: cover;
 }
 
 .coffeecup1 {

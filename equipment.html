@@ -14,6 +14,11 @@
 </head>
 
 <body>
+
+  <div class="modal" onclick="closeModal()">
+    <img class="modalImg"/>
+  </div>
+
   <div class="grid">
     <header>
       <a href="index.html">
@@ -39,9 +44,9 @@
         <p class="coursesBorder">Courses</p></a>
     </div>
     <main>
-      <div class="equipment1"></div>
-      <div class="equipment2"></div>
-      <div class="equipment3"></div>
+      <div class="equipment1" onclick="openModal('./assets/equpment1.jpg')"></div>
+      <div class="equipment2" onclick="openModal('./assets/equipment2.jpg')"></div>
+      <div class="equipment3" onclick="openModal('./assets/equipment3.jpg')"></div>
       <div class="price1"><p>Price: 25$</p></div>
       <div class="price2"><p>Price: 30$</p></div>
       <div class="price3"><p>Price: 12$</p></div>

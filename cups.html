@@ -14,6 +14,11 @@
 </head>
 
 <body>
+
+  <div class="modal" onclick="closeModal()">
+    <img class="modalImg"/>
+  </div>
+
   <div class="grid">
     <header>
       <a href="index.html">
@@ -39,9 +44,9 @@
         <p class="coursesBorder">Courses</p></a>
     </div>
     <main>
-      <div class="coffeecup1"></div>
-      <div class="coffeecup2"></div>
-      <div class="coffeecup3"></div>
+      <div class="coffeecup1" onclick="openModal('./assets/coffeecup1.jpg')"></div>
+      <div class="coffeecup2" onclick="openModal('./assets/cofeecup2.jpg')"></div>
+      <div class="coffeecup3" onclick="openModal('./assets/cofeecup3.jpg')"></div>
       <div class="price1">
         <p>Price: 25$ <i id="heart1" class="fas fa-heart"></i></p>
         

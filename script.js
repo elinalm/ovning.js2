@@ -6,6 +6,11 @@ let count = 0;
 let div;
 let nrOfCartitems;
 let btn = document.getElementById("addToCart");
+let imageurl = [
+    "./assets/coffeecup1.jpg",
+    "./assets/cofeecup2.jpg",
+    "./assets/cofeecup3.jpg"
+];
 price1.addEventListener("click", (ev) => {
     let cup = document.querySelector("#heart1");
     cup.classList.toggle("red");
@@ -18,6 +23,16 @@ price3.addEventListener("click", (ev) => {
     let cup2 = document.querySelector("#heart3");
     cup2.classList.toggle("red");
 });
+function openModal(imgUrl) {
+    let modal = document.querySelector(".modal");
+    let modalimg = document.querySelector(".modalImg");
+    modalimg.src = imgUrl;
+    modal.style.visibility = "visible";
+}
+function closeModal() {
+    let modal = document.querySelector(".modal");
+    modal.style.visibility = "hidden";
+}
 if (btn !== null) {
     btn.addEventListener("click", addToCart);
 }

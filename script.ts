@@ -5,6 +5,11 @@ let count = 0;
 let div;
 let nrOfCartitems: any;
 let btn = document.getElementById("addToCart");
+let imageurl: string[] = [
+  "./assets/coffeecup1.jpg",
+  "./assets/cofeecup2.jpg",
+  "./assets/cofeecup3.jpg"
+]
 
 price1.addEventListener("click", (ev: MouseEvent) => {
   let cup = document.querySelector("#heart1") as HTMLElement;
@@ -25,6 +30,19 @@ price3.addEventListener("click", (ev: MouseEvent) => {
 }); 
 
 
+function openModal(imgUrl: string) {
+  let modal = document.querySelector(".modal") as HTMLElement
+  let modalimg = document.querySelector(".modalImg") as HTMLImageElement
+  
+  modalimg.src = imgUrl
+  modal.style.visibility = "visible"
+}
+
+function closeModal() {
+  let modal = document.querySelector(".modal") as HTMLElement
+  modal.style.visibility = "hidden"
+}
+
 
 if (btn !== null) {
   btn.addEventListener("click", addToCart);
@@ -40,3 +58,4 @@ function addToCart() {
   count++;
   nrOfCartitems.innerHTML = count.toString();
 }
+
