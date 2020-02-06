@@ -1,3 +1,15 @@
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 16% 5.6% 85% 18%;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "main main main"
+    "footer footer footer";
+}
+
 main {
   grid-area: main;
   background-image: url(./assets/main_photo.jpg);

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://kit.fontawesome.com/4a99720832.js" crossorigin="anonymous"></script>
   <title>Coffe makes the world go round</title>
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
   <link href="equipment.css" rel="stylesheet" />
   <link href="general.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet" />
@@ -26,6 +26,7 @@
         <i class="fas fa-heart"></i>
         <i class="fas fa-user"></i>
         <i class="fas fa-shopping-cart"></i>
+        <div class="itemInCart"></div>
       </div>
     </header>
     <div class="menu">
@@ -42,9 +43,23 @@
       <div class="equipment1"></div>
       <div class="equipment2"></div>
       <div class="equipment3"></div>
-      <div class="price1"><p>Price: 25$</p></div>
-      <div class="price2"><p>Price: 30$</p></div>
-      <div class="price3"><p>Price: 12$</p></div>
+      <div class="price1">
+        <p>Price: 25$ <i id="heart1" class="fas fa-heart"></i></p>
+          <button id="addToCart">Add to cart</button>
+          
+
+      </div>
+      <div class="price2">
+        <p>Price: 30$ <i id="heart2" class="fas fa-heart"></i> </p>
+          <button id="addToCart">Add to cart</button>
+         
+      </div>
+      <div class="price3">
+        <p>Price: 12$ <i id="heart3" class="fas fa-heart"></i>   </p>
+          <button id="addToCart">Add to cart</button>
+         
+      </div>
+
     </main>
     <footer>
       <div class="telMail">

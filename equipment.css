@@ -1,3 +1,15 @@
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 16% 5.6% 85% 18%;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "main main main"
+    "footer footer footer";
+}
+
 main {
   grid-area: main;
   display: grid;
@@ -56,4 +68,15 @@ img {
 .price3 {
   grid-area: price3;
   text-align: center;
+}
+
+.nrOfCartItems {
+  position: absolute;
+  top: 0.2rem;
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 50%;
 }
