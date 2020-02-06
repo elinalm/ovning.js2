@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://kit.fontawesome.com/4a99720832.js" crossorigin="anonymous"></script>
   <title>Coffe makes the world go round</title>
-  <script defer src="script.js"></script>
-  <link href="cups.css" rel="stylesheet" />
+  <script src="script.js"></script>
+  <link href="courses.css" rel="stylesheet" />
   <link href="general.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet" />
 </head>
@@ -39,15 +39,19 @@
         <p class="coursesBorder">Courses</p></a>
     </div>
     <main>
-      <div class="coffeecup1"></div>
-      <div class="coffeecup2"></div>
-      <div class="coffeecup3"></div>
-      <div class="price1">
-        <p>Price: 25$ <i id="heart1" class="fas fa-heart"></i></p>
-        
-      </div>
-      <div class="price2"><p>Price: 30$ <i id="heart2" class="fas fa-heart"></i></p></div>
-      <div class="price3"><p>Price: 12$ <i id="heart3" class="fas fa-heart"></i></p></div>
+      <div class="courses"> <p>Want to join one of our courses?</p></div>
+      <form>
+        <h2>Choose type of course:</h2>
+        <div>
+        <input type="radio" id="short" name="course" value="short"> <label for="short">Short barista course (5 weeks)</label><br> 
+        <input type="radio" id="long" name="course" value="long"> <label for="long">Long barista course (10 weeks)</label><br>
+        <input type="radio" id="home" name="course" value="homecourse"> <label for="home">Make great coffee at home (1 class)</label><br>
+        </div>
+        <input type="text" name="firstname" placeholder="First name">
+        <input type="text" name="lastname" placeholder="Last name">
+        <input type="text" name="email" placeholder="Email">
+        <input type="submit">
+      </form>
     </main>
     <footer>
       <div class="telMail">
