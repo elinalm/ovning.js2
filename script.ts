@@ -5,15 +5,13 @@ function startOfProgram() {
   updateCartCount();
 }
 
-let heart1 = document.querySelector<HTMLElement>("#heart1")!;
+let heart1 = document.querySelector("#heart1") as HTMLElement;
 let heart2 = document.querySelector("#heart2") as HTMLElement;
 let heart3 = document.querySelector("#heart3") as HTMLElement;
 let count: number;
 let div;
 let nrOfCartitems: any;
 let btns = document.querySelectorAll<HTMLButtonElement>(".addToCart");
-let btn2 = document.querySelector(".addToCart2") as HTMLButtonElement;
-let btn3 = document.querySelector(".addToCart3") as HTMLButtonElement;
 
 document.getElementsByName;
 
@@ -56,6 +54,12 @@ for (const btn of btns) {
 }
 
 function addToCart() {
+  if (count === 0) {
+    div = document.querySelector(".fa-shopping-cart");
+    nrOfCartitems = document.createElement("p");
+    nrOfCartitems.className = "nrOfCartItems";
+    div?.appendChild(nrOfCartitems);
+  }
   count++;
   localStorage.setItem("cartCount", count.toString());
   updateCartCount();
