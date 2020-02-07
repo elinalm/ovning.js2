@@ -11,8 +11,6 @@ let count;
 let div;
 let nrOfCartitems;
 let btns = document.querySelectorAll(".addToCart");
-let btn2 = document.querySelector(".addToCart2");
-let btn3 = document.querySelector(".addToCart3");
 document.getElementsByName;
 let imageurl = [
     "./assets/coffeecup1.jpg",
@@ -45,6 +43,13 @@ for (const btn of btns) {
     btn.addEventListener("click", addToCart);
 }
 function addToCart() {
+    var _a;
+    if (count === 0) {
+        div = document.querySelector(".fa-shopping-cart");
+        nrOfCartitems = document.createElement("p");
+        nrOfCartitems.className = "nrOfCartItems";
+        (_a = div) === null || _a === void 0 ? void 0 : _a.appendChild(nrOfCartitems);
+    }
     count++;
     localStorage.setItem("cartCount", count.toString());
     updateCartCount();
