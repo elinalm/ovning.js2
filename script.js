@@ -1,11 +1,16 @@
 "use strict";
+window.addEventListener("load", startOfProgram);
+function startOfProgram() {
+    count = Number(localStorage.getItem("cartCount")) || 0;
+    updateCartCount();
+}
 let heart1 = document.querySelector("#heart1");
 let heart2 = document.querySelector("#heart2");
 let heart3 = document.querySelector("#heart3");
-let count = 0;
+let count;
 let div;
 let nrOfCartitems;
-let btn = document.querySelector(".addToCart");
+let btns = document.querySelectorAll(".addToCart");
 let btn2 = document.querySelector(".addToCart2");
 let btn3 = document.querySelector(".addToCart3");
 document.getElementsByName;
@@ -36,20 +41,24 @@ function closeModal() {
     let modal = document.querySelector(".modal");
     modal.style.visibility = "hidden";
 }
-if (btn || btn2 || btn3 !== null) {
+for (const btn of btns) {
     btn.addEventListener("click", addToCart);
-    btn2.addEventListener("click", addToCart);
-    btn3.addEventListener("click", addToCart);
 }
 function addToCart() {
-    var _a;
-    if (count === 0) {
-        div = document.querySelector(".fa-shopping-cart");
-        nrOfCartitems = document.createElement("p");
-        nrOfCartitems.className = "nrOfCartItems";
-        (_a = div) === null || _a === void 0 ? void 0 : _a.appendChild(nrOfCartitems);
-    }
     count++;
-    nrOfCartitems.innerHTML = count.toString();
+    localStorage.setItem("cartCount", count.toString());
+    updateCartCount();
+}
+function updateCartCount() {
+    var _a;
+    if (count > 0) {
+        if (!nrOfCartitems) {
+            div = document.querySelector(".fa-shopping-cart");
+            nrOfCartitems = document.createElement("p");
+            nrOfCartitems.className = "nrOfCartItems";
+            (_a = div) === null || _a === void 0 ? void 0 : _a.appendChild(nrOfCartitems);
+        }
+        nrOfCartitems.innerHTML = count.toString();
+    }
 }
 //# sourceMappingURL=script.js.map
