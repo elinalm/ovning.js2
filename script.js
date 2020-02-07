@@ -52,3 +52,4 @@ function addToCart() {
     count++;
     nrOfCartitems.innerHTML = count.toString();
 }
+//# sourceMappingURL=script.js.map

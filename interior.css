@@ -10,6 +10,9 @@
     "footer footer footer";
 }
 
+.red{
+  color: red;
+}
 main {
   grid-area: main;
   display: grid;
