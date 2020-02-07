@@ -4,48 +4,50 @@ let heart3 = document.querySelector("#heart3") as HTMLElement;
 let count = 0;
 let div;
 let nrOfCartitems: any;
-let btn = document.getElementById("addToCart");
+let btn = document.querySelector(".addToCart") as HTMLButtonElement;
+let btn2 = document.querySelector(".addToCart2") as HTMLButtonElement;
+let btn3 = document.querySelector(".addToCart3") as HTMLButtonElement;
+
+document.getElementsByName;
+
 let imageurl: string[] = [
   "./assets/coffeecup1.jpg",
   "./assets/cofeecup2.jpg",
   "./assets/cofeecup3.jpg"
-]
+];
 
 heart1.addEventListener("click", (ev: MouseEvent) => {
   let cup = document.querySelector("#heart1") as HTMLElement;
-  cup.classList.toggle("red")
-
-}); 
+  cup.classList.toggle("red");
+});
 
 heart2.addEventListener("click", (ev: MouseEvent) => {
   let cup2 = document.querySelector("#heart2") as HTMLElement;
-  cup2.classList.toggle("red")
-
-}); 
+  cup2.classList.toggle("red");
+});
 
 heart3.addEventListener("click", (ev: MouseEvent) => {
   let cup2 = document.querySelector("#heart3") as HTMLElement;
-  cup2.classList.toggle("red")
-
-}); 
-
+  cup2.classList.toggle("red");
+});
 
 function openModal(imgUrl: string) {
-  let modal = document.querySelector(".modal") as HTMLElement
-  let modalimg = document.querySelector(".modalImg") as HTMLImageElement
-  
-  modalimg.src = imgUrl
-  modal.style.visibility = "visible"
+  let modal = document.querySelector(".modal") as HTMLElement;
+  let modalimg = document.querySelector(".modalImg") as HTMLImageElement;
+
+  modalimg.src = imgUrl;
+  modal.style.visibility = "visible";
 }
 
 function closeModal() {
-  let modal = document.querySelector(".modal") as HTMLElement
-  modal.style.visibility = "hidden"
+  let modal = document.querySelector(".modal") as HTMLElement;
+  modal.style.visibility = "hidden";
 }
 
-
-if (btn !== null) {
+if (btn || btn2 || btn3 !== null) {
   btn.addEventListener("click", addToCart);
+  btn2.addEventListener("click", addToCart);
+  btn3.addEventListener("click", addToCart);
 }
 
 function addToCart() {
@@ -58,4 +60,3 @@ function addToCart() {
   count++;
   nrOfCartitems.innerHTML = count.toString();
 }
-
