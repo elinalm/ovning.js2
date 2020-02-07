@@ -1,10 +1,17 @@
-let heart1 = document.querySelector("#heart1") as HTMLElement;
+window.addEventListener("load", startOfProgram);
+
+function startOfProgram() {
+  count = Number(localStorage.getItem("cartCount")) || 0;
+  updateCartCount();
+}
+
+let heart1 = document.querySelector<HTMLElement>("#heart1")!;
 let heart2 = document.querySelector("#heart2") as HTMLElement;
 let heart3 = document.querySelector("#heart3") as HTMLElement;
-let count = 0;
+let count: number;
 let div;
 let nrOfCartitems: any;
-let btn = document.querySelector(".addToCart") as HTMLButtonElement;
+let btns = document.querySelectorAll<HTMLButtonElement>(".addToCart");
 let btn2 = document.querySelector(".addToCart2") as HTMLButtonElement;
 let btn3 = document.querySelector(".addToCart3") as HTMLButtonElement;
 
@@ -44,19 +51,24 @@ function closeModal() {
   modal.style.visibility = "hidden";
 }
 
-if (btn || btn2 || btn3 !== null) {
+for (const btn of btns) {
   btn.addEventListener("click", addToCart);
-  btn2.addEventListener("click", addToCart);
-  btn3.addEventListener("click", addToCart);
 }
 
 function addToCart() {
-  if (count === 0) {
-    div = document.querySelector(".fa-shopping-cart");
-    nrOfCartitems = document.createElement("p");
-    nrOfCartitems.className = "nrOfCartItems";
-    div?.appendChild(nrOfCartitems);
-  }
   count++;
-  nrOfCartitems.innerHTML = count.toString();
+  localStorage.setItem("cartCount", count.toString());
+  updateCartCount();
+}
+
+function updateCartCount() {
+  if (count > 0) {
+    if (!nrOfCartitems) {
+      div = document.querySelector(".fa-shopping-cart");
+      nrOfCartitems = document.createElement("p");
+      nrOfCartitems.className = "nrOfCartItems";
+      div?.appendChild(nrOfCartitems);
+    }
+    nrOfCartitems.innerHTML = count.toString();
+  }
 }
